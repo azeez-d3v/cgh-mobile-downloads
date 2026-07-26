@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "ota-production-1.0.0-1",
+  "channel": "production",
+  "platform": "android",
+  "targetAppVersion": "1.0.0",
+  "bundleVersion": 1,
+  "downloadUrl": "https://github.com/azeez-d3v/cgh-mobile-downloads/releases/download/ota-production-v1.0.0-1/android.bundle.zip",
+  "sha256": "0d74511445d92f2ce4ade5f404ceeb7ca3ab14e15bd6b049a9acd179a8ce3ba7",
+  "size": 1590100,
+  "mandatory": true,
+  "publishedAt": "2026-07-26T23:54:47.728Z",
+  "releaseNotes": [
+    "Improved connection error handling with clear, user-friendly messages. Technical network details are no longer shown."
+  ]
+}
