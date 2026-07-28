@@ -1,19 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#fff6f9" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="theme-color" content="#fff7fa" >
+    <meta name="color-scheme" content="light" >
     <meta
       name="description"
-      content="Download CGH Mobile, an unofficial read-only student portal companion for Android."
-    />
-    <title>CGH Mobile — Android download</title>
-    <link rel="icon" href="./assets/app-icon.png" />
-    <link rel="stylesheet" href="./styles.css" />
+      content="Download Portal, the open-source, unofficial, read-only Android companion for the CGH SchoolAutomate student portal."
+    >
+    <meta property="og:type" content="website" >
+    <meta property="og:title" content="Portal for Android" >
+    <meta
+      property="og:description"
+      content="An open-source, read-only Android companion for selected CGH SchoolAutomate records."
+    >
+    <meta
+      property="og:url"
+      content="https://azeez-d3v.github.io/cgh-mobile-downloads/"
+    >
+    <meta
+      property="og:image"
+      content="https://azeez-d3v.github.io/cgh-mobile-downloads/assets/app-icon.png"
+    >
+    <link
+      rel="canonical"
+      href="https://azeez-d3v.github.io/cgh-mobile-downloads/"
+    >
+    <title>Portal for Android | Download &amp; Source</title>
+    <link rel="icon" href="./assets/app-icon.png" >
+    <link rel="stylesheet" href="./styles.css" >
     <script src="./app.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <div class="background" aria-hidden="true">
       <span class="blob blob-one"></span>
       <span class="blob blob-two"></span>
@@ -22,21 +43,51 @@
     </div>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="CGH Mobile home">
-        <img src="./assets/app-icon.png" alt="" />
-        <span>CGH Mobile</span>
+      <a class="brand" href="#top" aria-label="Portal home">
+        <img
+          src="./assets/app-icon.png"
+          alt=""
+          width="42"
+          height="42"
+          fetchpriority="high"
+        >
+        <span>Portal</span>
       </a>
-      <span class="status"><i></i> Android APK</span>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#open-source">Open Source</a>
+        <a
+          class="source-link"
+          href="https://github.com/azeez-d3v/cgh-mobile"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M15 18l6-6-6-6M9 6l-6 6 6 6"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+          Source Code
+        </a>
+      </nav>
     </header>
 
-    <main id="top">
-      <section class="hero">
+    <main id="main-content">
+      <section class="hero" id="top">
         <div class="hero-copy">
-          <div class="eyebrow">Unofficial • Read-only</div>
-          <h1>Your student records,<br /><span>made mobile.</span></h1>
+          <div class="eyebrow">
+            <span class="live-dot" aria-hidden="true"></span>
+            Open Source • Unofficial • Read-only
+          </div>
+          <h1>Your Student Records, <span>Made Mobile.</span></h1>
           <p class="lead">
-            A modern Android companion for viewing selected CGH SchoolAutomate records with a responsive interface
-            and offline access to previously loaded information.
+            Portal presents selected CGH SchoolAutomate records in a clearer
+            Android interface, with offline access to information you have
+            already loaded.
           </p>
 
           <div class="actions">
@@ -48,23 +99,39 @@
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" />
               </svg>
-              Download latest APK
+              Download Latest APK
             </a>
-            <a class="button button-secondary" href="#install">Installation guide</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/azeez-d3v/cgh-mobile"
+            >
+              View the Source
+            </a>
           </div>
 
-          <div class="release-line" aria-live="polite">
+          <div
+            class="release-line"
+            id="release-status"
+            aria-live="polite"
+            aria-busy="true"
+          >
             <span id="release-version">Checking latest release…</span>
-            <span class="dot">•</span>
+            <span class="dot" aria-hidden="true">•</span>
             <span id="release-meta">Android 8 or newer recommended</span>
           </div>
         </div>
 
-        <div class="app-preview" aria-label="CGH Mobile app icon">
-          <div class="halo"></div>
-          <img src="./assets/app-icon.png" alt="CGH Mobile app icon" />
+        <div class="app-preview">
+          <div class="halo" aria-hidden="true"></div>
+          <img
+            src="./assets/app-icon.png"
+            alt="Portal application icon"
+            width="300"
+            height="300"
+            fetchpriority="high"
+          >
           <div class="preview-note">
-            <strong>Pastel, focused, private</strong>
+            <strong>Clear, Focused, Readable</strong>
             <span>No ads or behavioral analytics</span>
           </div>
         </div>
@@ -78,39 +145,164 @@
           </svg>
         </div>
         <div>
-          <h2 id="unofficial-title">Unofficial CGH app portal</h2>
+          <h2 id="unofficial-title">Unofficial CGH App Portal</h2>
           <p>
-            This independent project is not affiliated with, operated by, or endorsed by CGH or SchoolAutomate. The
-            official portal remains the authoritative source for student records.
+            Portal is an independent project. It is not affiliated with,
+            operated by, or endorsed by CGH or SchoolAutomate. The official
+            portal and school offices remain the authoritative sources for
+            student records.
           </p>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section open-source-section" id="open-source">
+        <div class="section-heading">
+          <span>Built in public</span>
+          <h2>Trust Should Be Verifiable.</h2>
+          <p>
+            The complete application source is public. You can inspect its
+            portal requests, local storage, parser, and signed update process
+            before installing the APK.
+          </p>
+        </div>
+
+        <div class="trust-layout">
+          <article class="source-card">
+            <div class="source-card-top">
+              <div class="code-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="m8 9-3 3 3 3m8-6 3 3-3 3m-3-9-2 12" />
+                </svg>
+              </div>
+              <div>
+                <span>Public Repository</span>
+                <h3>azeez-d3v/cgh-mobile</h3>
+              </div>
+              <span class="public-pill">Public</span>
+            </div>
+            <p>
+              Licensed under MIT, with documented architecture, data handling,
+              release signing, security reporting, and contribution rules.
+            </p>
+            <div class="repository-actions">
+              <a
+                class="button button-dark"
+                href="https://github.com/azeez-d3v/cgh-mobile"
+              >
+                Browse Source Code
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m-5-5 5 5-5 5" />
+                </svg>
+              </a>
+              <a
+                class="text-link"
+                href="https://github.com/azeez-d3v/cgh-mobile/blob/development/CONTRIBUTING.md"
+              >
+                Contribution Guide
+              </a>
+            </div>
+          </article>
+
+          <div class="trust-grid">
+            <a
+              class="trust-card"
+              href="https://github.com/azeez-d3v/cgh-mobile/blob/development/docs/DATA_HANDLING.md"
+            >
+              <span class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </span>
+              <strong>Data Handling</strong>
+              <p>See what the app sends, stores locally, and never collects.</p>
+              <span class="card-action">Read the document →</span>
+            </a>
+
+            <a
+              class="trust-card"
+              href="https://github.com/azeez-d3v/cgh-mobile/security"
+            >
+              <span class="trust-icon lavender-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="4" y="10" width="16" height="11" rx="2" />
+                  <path d="M8 10V7a4 4 0 0 1 8 0v3m-4 4v3" />
+                </svg>
+              </span>
+              <strong>Security Checks</strong>
+              <p>Review secret scanning, update verification, and reporting.</p>
+              <span class="card-action">View security →</span>
+            </a>
+
+            <a
+              class="trust-card"
+              href="https://github.com/azeez-d3v/cgh-mobile/blob/development/docs/ARCHITECTURE.md"
+            >
+              <span class="trust-icon cream-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="7" height="7" rx="2" />
+                  <rect x="14" y="3" width="7" height="7" rx="2" />
+                  <rect x="8.5" y="14" width="7" height="7" rx="2" />
+                  <path d="M6.5 10v2h11v-2M12 12v2" />
+                </svg>
+              </span>
+              <strong>Architecture</strong>
+              <p>Follow the direct portal, cache, parser, and update flow.</p>
+              <span class="card-action">Review architecture →</span>
+            </a>
+
+            <a
+              class="trust-card"
+              href="https://github.com/azeez-d3v/cgh-mobile/blob/development/docs/OPEN_SOURCE_AUDIT.md"
+            >
+              <span class="trust-icon mint-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M9 11 12 14 22 4" />
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                </svg>
+              </span>
+              <strong>Publication Audit</strong>
+              <p>Read the secret, artifact, history, and dependency review.</p>
+              <span class="card-action">Read the audit →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
         <div class="section-heading">
           <span>Portal essentials</span>
-          <h2>Everything important,<br />without the clutter.</h2>
+          <h2>Important Records, Without the Clutter.</h2>
         </div>
         <div class="feature-grid">
           <article class="feature-card blush">
             <span class="feature-number">01</span>
-            <h3>Personal information</h3>
-            <p>A concise profile summary with only the essential student details.</p>
+            <h3>Personal Information</h3>
+            <p>A concise profile summary with essential student details.</p>
           </article>
           <article class="feature-card cream">
             <span class="feature-number">02</span>
-            <h3>Subjects & schedule</h3>
-            <p>Responsive subject cards, units, class times, rooms, sections, and faculty.</p>
+            <h3>Subjects &amp; Schedule</h3>
+            <p>
+              Responsive subject cards with units, class times, rooms,
+              sections, and faculty.
+            </p>
           </article>
           <article class="feature-card lavender">
             <span class="feature-number">03</span>
-            <h3>Ledger & dues</h3>
-            <p>Readable balances, transaction records, and periodic payment schedules.</p>
+            <h3>Ledger &amp; Dues</h3>
+            <p>
+              Readable balances, transaction records, and periodic payment
+              schedules.
+            </p>
           </article>
           <article class="feature-card white">
             <span class="feature-number">04</span>
-            <h3>Curriculum checklist</h3>
-            <p>Filterable progress records grouped into manageable pages instead of one endless table.</p>
+            <h3>Curriculum Checklist</h3>
+            <p>
+              Filterable progress records grouped into manageable pages
+              instead of one long table.
+            </p>
           </article>
         </div>
       </section>
@@ -118,45 +310,95 @@
       <section class="install section" id="install">
         <div class="section-heading">
           <span>Direct installation</span>
-          <h2>Install the APK<br />in three steps.</h2>
+          <h2>Install the APK in 3 Steps.</h2>
+          <p>
+            Portal is distributed through GitHub Releases, not the Play Store.
+          </p>
         </div>
         <ol class="steps">
           <li>
-            <b>1</b>
+            <b aria-hidden="true">1</b>
             <div>
-              <strong>Download</strong>
-              <p>Tap “Download latest APK” and keep the file on your Android device.</p>
+              <strong>Download the APK</strong>
+              <p>
+                Select <b>Download Latest APK</b> and keep the file on your
+                Android device.
+              </p>
             </div>
           </li>
           <li>
-            <b>2</b>
+            <b aria-hidden="true">2</b>
             <div>
-              <strong>Allow this source</strong>
-              <p>If Android asks, permit your browser or file manager to install this APK.</p>
+              <strong>Allow This Source</strong>
+              <p>
+                If Android asks, allow your browser or file manager to install
+                this APK.
+              </p>
             </div>
           </li>
           <li>
-            <b>3</b>
+            <b aria-hidden="true">3</b>
             <div>
-              <strong>Install and sign in</strong>
-              <p>Open CGH Mobile and use your own authorized student portal credentials.</p>
+              <strong>Install &amp; Sign In</strong>
+              <p>
+                Open Portal and use only your own authorized student portal
+                account.
+              </p>
             </div>
           </li>
         </ol>
       </section>
 
-      <section class="privacy-card">
+      <section class="verification-strip" aria-labelledby="verify-title">
+        <div class="verification-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3 4 7v5c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V7l-8-4Z" />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+        </div>
         <div>
-          <span>Designed for limited access</span>
-          <h2>Read-only by design.</h2>
+          <h2 id="verify-title">Verify Your Download</h2>
           <p>
-            The app does not enroll subjects, submit forms, modify grades, post payments, or change official portal
-            records. Previously retrieved information may be cached locally for offline viewing.
+            Every production release includes a SHA-256 checksum beside the
+            APK. Compare it before installing if you want to verify the file.
           </p>
         </div>
         <a
-          class="button button-primary"
+          class="text-link"
+          href="https://github.com/azeez-d3v/cgh-mobile-downloads/releases"
+          data-checksum
+        >
+          View Checksum
+        </a>
+      </section>
+
+      <section class="privacy-card">
+        <div>
+          <span>Transparent by design</span>
+          <h2>Know Where Your Data Goes.</h2>
+          <p>
+            Production sign-in and record requests go directly to the official
+            portal. Passwords are not intentionally persisted. Previously
+            retrieved records may remain in private app storage for offline
+            viewing.
+          </p>
+          <div class="privacy-links">
+            <a
+              href="https://github.com/azeez-d3v/cgh-mobile/blob/development/docs/DATA_HANDLING.md"
+            >
+              Read Data Handling
+            </a>
+            <a
+              href="https://github.com/azeez-d3v/cgh-mobile/blob/development/SECURITY.md"
+            >
+              Security Policy
+            </a>
+          </div>
+        </div>
+        <a
+          class="button button-light"
           href="https://github.com/azeez-d3v/cgh-mobile-downloads/releases/latest/download/CGH-Mobile.apk"
+          data-download
         >
           Get the APK
         </a>
@@ -164,12 +406,33 @@
     </main>
 
     <footer>
-      <div class="brand footer-brand">
-        <img src="./assets/app-icon.png" alt="" />
-        <span>CGH Mobile</span>
+      <div class="footer-main">
+        <div class="brand footer-brand">
+          <img
+            src="./assets/app-icon.png"
+            alt=""
+            width="32"
+            height="32"
+            loading="lazy"
+          >
+          <span>Portal</span>
+        </div>
+        <p>
+          Unofficial student companion. Not affiliated with CGH or
+          SchoolAutomate.
+        </p>
       </div>
-      <p>Unofficial student companion • Not affiliated with CGH or SchoolAutomate</p>
-      <a href="https://github.com/azeez-d3v/cgh-mobile-downloads/releases">Release history</a>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="https://github.com/azeez-d3v/cgh-mobile">Source</a>
+        <a href="https://github.com/azeez-d3v/cgh-mobile-downloads/releases">
+          Releases
+        </a>
+        <a
+          href="https://github.com/azeez-d3v/cgh-mobile/blob/development/LICENSE"
+        >
+          MIT License
+        </a>
+      </nav>
     </footer>
   </body>
 </html>

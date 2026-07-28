@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azeez-d3v.github.io/cgh-mobile-downloads/sitemap.xml
